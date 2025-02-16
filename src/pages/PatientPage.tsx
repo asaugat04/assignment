@@ -1,5 +1,3 @@
-"use client";
-
 import {
   EyeInvisibleOutlined,
   MoreOutlined,
@@ -145,7 +143,7 @@ export default function PatientPage() {
         />
       </div>
 
-      {/* Header */}
+      
       <div className="flex md:flex-row flex-col justify-between items-start md:items-center gap-y-4">
         <Space>
           <Stethoscope size={24} />
@@ -159,7 +157,7 @@ export default function PatientPage() {
         </Space>
       </div>
 
-      {/* Filters */}
+      
       <div>
         <h3 className="pb-2">Filters:</h3>
         <div className="gap-4 grid md:grid-cols-3 text-lightDark">
@@ -178,7 +176,7 @@ export default function PatientPage() {
         </div>
       </div>
 
-      {/* Statistics Cards */}
+      
       <div className="gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         <StatsCard title="New Patients" icon={User} value={"20"} />
         <StatsCard title="Average Wait Time" icon={History} value="25 min" />
@@ -210,7 +208,7 @@ export default function PatientPage() {
         ))}
       </div>
 
-      {/* Search and Show entries */}
+      
       <div className="flex justify-between items-center">
         <Input
           prefix={<SearchOutlined />}
@@ -232,7 +230,7 @@ export default function PatientPage() {
         </div>
       </div>
 
-      {/* Table */}
+      
       <Table
         columns={columns}
         dataSource={data}
